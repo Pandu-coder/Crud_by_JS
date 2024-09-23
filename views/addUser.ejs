@@ -1,0 +1,30 @@
+<%- include("./partials/header.ejs") %>
+
+<h3>Add Student Details</h3>
+
+<form action="/" method="get">
+    <button class="homebutton">Back to Home</button>
+</form>
+
+<form action="/adduser" method="post">
+
+    <div class="addData">
+        <label for="Name">Name</label>
+        <input type="text" name="Name">
+    </div>
+    <div class="addData">
+        <label for="Age">Age</label>
+        <input type="number" name="Age">
+    </div>
+    <div class="addData">
+        <label for="City">City</label>
+        <input type="text" name="City">
+    </div>
+    
+    <div class="addData-submit">
+        <button  class="addData-submitButton"type="submit">Add Student</button>
+    </div>
+</form>
+
+<%- include("./partials/footer.ejs") %>
+

@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --html-color: #2F3645 ;
+    --body-color: #939185;
+    --heading-color:#E6B9A6;
+    --defaultfont-size: 1rem;
+    --defaultText-color:#EEEDEB;
+}
+
+html{
+    background-color: var(--html-color);
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--body-color);
+    width: 900px;
+    height: 1000px;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: var(--defaultfont-size);
+}
+
+
+h3{
+    font-size: 2rem;
+    color: var(--heading-color);
+    padding: 10px;
+    border-bottom: 2px solid var(--heading-color);
+    text-align:justify;
+    
+}
+
+.addUser{
+    float: right;
+    border-radius: 3px;
+    margin:100px 20px 25px 0px;
+    padding: 5px 10px;
+    background-color: rgb(141, 174, 237);
+    color: var(--defaultText-color);
+   
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    /* border-collapse: collapse; */
+    
+}
+
+table thead td {
+    padding: 5px  15px;
+    background-color: #80AF81;
+    color: #D6EFD8;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+table tbody td{
+    padding: 5px  15px;
+    color:#2d2c2c;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+table tbody tr:nth-child(even){
+    background-color: rgb(179, 199, 216);
+}
+
+.edit , .delete {
+    text-decoration: none;
+    background-color: rgb(205, 43, 75);
+    display: block;
+    color: var(--defaultText-color);
+    border-radius: 3px;
+
+}
+
+.edit {
+    background-color: rgb(84, 84, 240);
+    color:var(--defaultText-color);
+    
+}
+
+.addData{
+    font-weight: 400;   
+    padding: 5px;
+    margin: 10px;
+    border-radius: 3px;
+
+}
+
+.addData label , .addData input{
+    display: block;
+}
+
+.addData input{
+    width: 50%;
+}
+.addData-submitButton{
+    border-radius: 3px;
+    padding: 5px;
+    background-color: rgb(118, 156, 227);
+    color: var(--defaultText-color);
+    border-style: none;
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+
+.homebutton{
+    background-color: #508D4E;
+    color: var(--defaultText-color);
+    border-radius: 3px;
+    padding: 5px;
+    border-style: none;
+    margin-left: 80%;
+    cursor: pointer;
+}
+
+
+.resultpage{
+    background-color: red;
+    color: blue;
+}

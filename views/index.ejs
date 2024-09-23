@@ -1,0 +1,36 @@
+<%- include("./partials/header.ejs") %>
+
+    <div><a href="/adduser" class="addUser">Add User</a></div>
+
+    <div><a onclick="return confirm('This will delete all data!')" href="/truncate" class="addUser">Reset All Data</a></div>
+
+    <h3>Registration Management</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <td>id</td>
+                <td>name</td>
+                <td>Age</td>
+                <td>City</td>
+                <td>Edit</td>
+                <td>Delete</td>
+            </tr>  
+        </thead>
+
+        <tbody>
+            <% rows.forEach(function(row) { %>
+                <tr>
+                    <td><%= row.id %></td>
+                    <td><%= row.name %></td>
+                    <td><%= row.age %></td>
+                    <td><%= row.city %></td>
+                    <td><a href="/edituser/<%= row.id %>" class="edit">Edit</a></td>
+                    <td><a onclick="return confirm('Do you want to delete data having Id : <%= row.id%>')" href="/deleteuser/<%= row.id %>" class="delete">Delete</a></td>
+                </tr>   
+                <% }); %>    
+        </tbody>
+
+    </table>
+    
+<%- include("./partials/footer.ejs") %>
